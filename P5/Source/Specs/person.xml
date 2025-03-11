@@ -23,16 +23,12 @@
   </classes>
   <content>
     <alternate>
-      
         <classRef key="model.pLike" minOccurs="1" maxOccurs="unbounded"/>
-      
-      
         <alternate minOccurs="0" maxOccurs="unbounded">
           <classRef key="model.personPart"/>
           <classRef key="model.global"/>
-          <elementRef key="ptr"/>
+          <classRef key="model.ptrLike"/>
         </alternate>
-      
     </alternate>
   </content>
   <attList>
@@ -45,14 +41,13 @@
       <desc versionDate="2007-05-04" xml:lang="es">establece el rol o la clasificación primaria de una persona.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">stabilisce il ruolo o la classificazione primaria di una persona</desc>
       <datatype maxOccurs="unbounded"><dataRef key="teidata.enumerated"/></datatype>
-<remarks versionDate="2013-12-21" xml:lang="en">
+      <remarks versionDate="2013-12-21" xml:lang="en">
         <p>Values for this attribute may be locally defined by a
 	project, using arbitrary keywords such as <val>artist</val>,
 	<val>employer</val>, <val>author</val>, <val>relative</val>, or
 	<val>servant</val>, each of which should be associated with a
 	definition. Such local definitions will typically be provided by a
-	<gi>valList</gi> element in the project schema
-specification.</p></remarks>
+	<gi>valList</gi> element in the project schema specification.</p></remarks>
     </attDef>
     <attDef ident="sex" usage="opt">
       <desc versionDate="2005-12-14" xml:lang="en">specifies the sex of the person.</desc>
@@ -83,14 +78,13 @@ specification.</p></remarks>
       <desc versionDate="2007-05-04" xml:lang="es">especifica un intervalo de edad para una persona.</desc>
       <desc versionDate="2007-01-21" xml:lang="it">indica la fascia di età di una persona</desc>
       <datatype><dataRef key="teidata.enumerated"/></datatype>
-<remarks versionDate="2013-12-21" xml:lang="en">
+      <remarks versionDate="2013-12-21" xml:lang="en">
         <p>Values for this attribute may be locally defined by a
 	project, using arbitrary keywords such as <val>infant</val>,
 	<val>child</val>, <val>teen</val>, <val>adult</val>, or
 	<val>senior</val>, each of which should be associated with a
 	definition. Such local definitions will typically be provided by a
-	<gi>valList</gi> element in the project schema
-specification.</p></remarks>
+	<gi>valList</gi> element in the project schema specification.</p></remarks>
     </attDef>
   </attList>
   <exemplum xml:lang="en">

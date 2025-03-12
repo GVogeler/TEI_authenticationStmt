@@ -164,6 +164,32 @@
       </person>
     </egXML>
   </exemplum>
+  <exemplum xml:lang="en">
+    <p>This example demonstrates the use of a <gi>ref</gi> element to provide more information about a person.</p>
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-person-egxml-ebb">
+      <person xml:id="Kelly_FH" sex="F">
+        <persName>Miss Kelly</persName>
+        <persName>
+          <surname>Kelly</surname>
+          <forename>Frances</forename>
+          <forename>Harriet</forename>
+        </persName>
+        <birth when="1805-06-30">
+          <placeName>Chelsea, Middlesex, England</placeName>
+        </birth>
+        <death when="1887-03-19">
+          <placeName>Middlesex, England</placeName>
+        </death>
+        <occupation type="theater" subtype="actor"/>
+        <note>
+          <persName ref="#MRM">Mitford</persName> mentions traveling to London to see Miss Kelly perform in her Journal on <date when="1820-06-29">June 29, 1820</date>.
+          It seems possible Mitford might have been going to see her perform in the comic opera, <title level="m">The Promissory Note</title>, 
+          which opened in the <placeName ref="#Opera_House">Theatre Royal</placeName> on June 29 and continued into July 1820.                
+        </note>
+        <ref target="https://d1m87s0l7jnwya.cloudfront.net/melodrama/lyceum_1820-07-10_britishlibrary_lsidyv4332b851_1809-1821_lyceum_english_opera_0434/"><title level="m">Romantic Melodrama</title>’s record of Miss Kelly’s performance in <title level="m">The Promissory Note</title>.</ref>
+      </person>
+    </egXML>
+  </exemplum>
   <remarks versionDate="2005-12-14" xml:lang="en">
     <p rend="dataDesc">May contain either a prose description organized as paragraphs, or a sequence of more specific demographic elements drawn
             from the <ident type="class">model.personPart</ident> class.</p>

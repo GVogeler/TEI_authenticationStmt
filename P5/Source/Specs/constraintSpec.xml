@@ -62,23 +62,21 @@
     </constraint>
   </constraintSpec>
   <constraintSpec ident="context-required" scheme="schematron" xml:lang="en">
-    <!-- Note: This constraint fires on some cases of
-         <constraintDecl>, as well. -->
+    <!-- Note: This constraint also fires on some cases of <constraintDecl>. -->
     <!-- It would be somewhat easier and clearer to use
          "tei:constraintSpec[ @scheme eq 'schematron']//( sch:assert | sch:report )"
-         as the context and then test for "ancestor::sch:rule/@context".
+         as the context, and then test for "ancestor::sch:rule/@context".
          But if we did that, then a user who had multiple
          <sch:assert>s and <sch:report>s in a single contextless
          constraint would get multiple messages. This way she only
          gets one message. -->
     <constraint>
-      <sch:rule context="tei:constraintSpec[ @scheme eq 'schematron']/tei:constraint[ .//sch:assert | .//sch:report ]
-                         |
-                         tei:constraintDecl[ @scheme eq 'schematron'][ .//sch:assert | .//sch:report ]">
+      <sch:rule context="(tei:constraintSpec|tei:constraintDecl)[ @scheme eq 'schematron'][ .//sch:assert | .//sch:report ]">
         <sch:let name="assertsHaveContext" value="for $a in .//sch:assert return exists( $a/ancestor::sch:rule/@context )"/>
         <sch:let name="reportsHaveContext" value="for $r in .//sch:report return exists( $r/ancestor::sch:rule/@context )"/>
-        <sch:report test="( $assertsHaveContext, $reportsHaveContext )
-                          = false()" role="warning">An &lt;sch:assert&gt; or &lt;sch:report&gt; element must be a descendant of an &lt;sch:rule&gt; that has a @context.</sch:report>
+        <sch:report test="( $assertsHaveContext, $reportsHaveContext ) = false()">An &lt;sch:assert&gt; or &lt;sch:report&gt;
+          element must be a descendant of an &lt;sch:rule&gt; that has a @context; one or more inside this
+          <sch:value-of select="local-name(.)"/> are not.</sch:report>
       </sch:rule>
     </constraint>
   </constraintSpec>

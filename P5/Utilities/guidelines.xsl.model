@@ -222,12 +222,7 @@
                 <a href="ref-{$me}.html">
                   <xsl:value-of select="'&lt;'||$me||'&gt;'"/>
                 </a>
-                <xsl:text>&#x20;</xsl:text>
-                <!-- We need the separate <text>, above; we can’t just
-                     use "' '||makeGloss()" in the @select below
-                     because makeGloss() returns a sequence. Maybe we
-                     could use "' '||string-join( makeGloss() )" …  -->
-                <xsl:sequence select="tei:makeGloss(.,$langs)"/>
+                <xsl:sequence select="string-join( '&#x20;', tei:makeGloss(.,$langs) )"/>
               </h3>
               <p>These search results reproduce every example of the
               use of <xsl:text>&lt;</xsl:text>

@@ -166,12 +166,12 @@
   </exemplum>
   <exemplum xml:lang="en">
     <p>This example demonstrates the use of a <gi>ref</gi> element to provide more information about a person.</p>
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-person-egxml-dram">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-person-egxml-dr">
       <person age="G2" role="author" xml:id="W0212" sex="F">
         <birth when="1787"/>
         <death when="1855"/>
         <persName type="main">Mitford, Mary Russell (1787–1855)</persName>
-        <persName resp="Nicoll">MITFORD, MARY RUSSELL</persName>
+        <persName resp="#Nicoll">MITFORD, MARY RUSSELL</persName>
         <listBibl type="lacyTitles">
           <desc>Lacy's Acting Editions</desc>
           <bibl><ref target="lacy:L1280">Foscari</ref></bibl>
@@ -181,7 +181,6 @@
           <ref target="https://www.victorianresearch.org/atcl/show_author.php?aid=1386">ATCL</ref>
           <ref target="https://doi.org/10.1093/ref:odnb/18859">ODNB</ref>
           <ref target="https://en.wikipedia.org/wiki/Mary_Russell_Mitford">Wikipedia</ref>
-          <ref>Curran (contribs:23)</ref>
           <ref target="https://digitalmitford.org">Digital Mitford</ref>
         </listRef>
       </person>

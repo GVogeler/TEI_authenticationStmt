@@ -34,12 +34,20 @@ document.addEventListener("DOMContentLoaded", function() {
          note's content should be loaded into the popup. */
         links[i].onclick = function (e) {
           e.preventDefault();
-          var anchor = e.target,
-              dest = anchor.getAttribute('href').substring(1);
-          showPopupFootnote(anchor, dest);
+          /* The event's currentTarget is the element that has the event attached 
+           (<a>), rather than the descendant element that fired the event (<sup>). */
+          var anchor = e.currentTarget,
+              dest = anchor.getAttribute('href');
+          if ( dest !== null ) {
+            dest = dest.substring(1);
+            showPopupFootnote(anchor, dest);
+          } else {
+            console.warn('Could not generate note content for anchor:');
+            console.warn(e.currentTarget);
+          }
         }
       }
-    }    
+    }
   }
   addBiblFrame();
 });

@@ -30,10 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
   for (var i=0; i<links.length; i++){
     if (links[i].hasAttribute("href") && links[i].getAttribute('href').substring(0, 5) == '#Note'){
       if (links[i].getAttribute('class') != 'link_return'){
-        var dest = links[i].getAttribute('href').substring(1);
+        /* When an anchor link is clicked, we use its @href value to determine which 
+         note's content should be loaded into the popup. */
         links[i].onclick = function (e) {
           e.preventDefault();
-          showPopupFootnote(e.target, dest);
+          var anchor = e.target,
+              dest = anchor.getAttribute('href').substring(1);
+          showPopupFootnote(anchor, dest);
         }
       }
     }    

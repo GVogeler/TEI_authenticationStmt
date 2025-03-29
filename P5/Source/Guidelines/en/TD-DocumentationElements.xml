@@ -1518,7 +1518,7 @@ xmlns="http://www.tei-c.org/ns/Examples"><attList>
         <p>As noted above, the <att>output</att> attribute is used to associate particular processing models
           with a specific type of output. The following example documents a range of processing intentions for
           the <gi>date</gi> element, intended to cope with at least the following three situations:</p>
-        <list type="ordered">
+        <list rend="numbered">
           <item>there is text inside the element, and the output is print; </item>
           <item>there is no text inside the element but there is a <att>when</att> attribute, and the output
             is print; </item>

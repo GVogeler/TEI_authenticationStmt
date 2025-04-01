@@ -6,16 +6,18 @@
  */
  
  // Make these variables global so we can use them everywhere.
- const footnotePopup = document.createElement('div');
- const footnotePopupContent = document.createElement('div');
+ const footnotePopup = document.createElement('div'),
+    footnotePopupContent = document.createElement('div'),
+    closeBtn = document.createElement('button');
  let biblFrame = null;
 
 
 document.addEventListener("DOMContentLoaded", function() {
   footnotePopup.setAttribute('id', 'footnotePopup');
-  let closeBtn = document.createElement('div'); // This should really be a <button>
   closeBtn.setAttribute('class', 'footnotePopupCloser');
   closeBtn.addEventListener('click', e => { e.target.parentNode.style.display = "none" });
+  // "x" says nothing about what the button does; for screen readers we need a label.
+  closeBtn.setAttribute('aria-label', "Close popup");
   closeBtn.appendChild(document.createTextNode('x'));
   footnotePopupContent.setAttribute('id', 'footnotePopupContent');
   footnotePopup.appendChild(closeBtn);
@@ -44,6 +46,8 @@ function showPopupFootnote(event){
     console.warn(el);
     return;
   }
+  // When the close button is clicked, return focus back to the link.
+  closeBtn.addEventListener('click', e => { el.focus() }, { once: true });
   // Take the '#' off the link ID.
   footnoteId = footnoteId.substring(1);
   let footnote = document.getElementById(footnoteId);
@@ -62,6 +66,8 @@ function showPopupFootnote(event){
   clearContent(footnotePopupContent);
   footnotePopupContent.appendChild(cloneFootnote);
   footnotePopup.style.display = 'block';
+  // Move focus to the close button, so screen readers have access to the note content.
+  closeBtn.focus();
 
   // Position the popup near the footnote
   const footnoteY = el.getBoundingClientRect().top;
@@ -80,7 +86,8 @@ function clearContent(targetEl){
 document.addEventListener("keyup", function(e) {
   if(e.keyCode === 27) {
     if (document.getElementById('footnotePopup').style.display == 'block'){
-      document.getElementById('footnotePopup').style.display = 'none';
+      // Simulate a click on the close button, so that focus returns where it needs to. 
+      closeBtn.click();
       e.preventDefault();
       e.stopPropagation();
     }

@@ -14021,7 +14021,7 @@ documented.</a:documentation>
       <ref name="att.global.attributes"/>
       <rng:optional>
         <rng:attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="minOccurs" a:defaultValue="1">
-          <a:documentation>(minimum number of occurrences) indicates the minimum number of times this datatype may
+          <a:documentation>(minimum number of occurences) indicates the minimum number of times this datatype may
       occur in the specification of the attribute being defined</a:documentation>
           <data type="nonNegativeInteger"/>
         </rng:attribute>

@@ -14028,7 +14028,7 @@ documented.</a:documentation>
       </rng:optional>
       <rng:optional>
         <rng:attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" name="maxOccurs" a:defaultValue="1">
-          <a:documentation>(maximum number of occurrences) indicates the maximum number of times this datatype may
+          <a:documentation>(maximum number of occurences) indicates the maximum number of times this datatype may
       occur in the specification of the attribute being defined</a:documentation>
           <choice>
             <data type="nonNegativeInteger"/>

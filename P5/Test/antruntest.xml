@@ -218,7 +218,7 @@
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
       <param name="lang" expression="${lang}"/>
     </xslt>
-    <xslt processor="trax" force="yes" style="../Utilities/lib/schxslt-1.9.5/2.0/pipeline-for-svrl.xsl" in="${outputname}.isosch" out="${outputname}.xsl">
+    <xslt processor="trax" force="yes" style="../Utilities/lib/schxslt-1.10.1/2.0/pipeline-for-svrl.xsl" in="${outputname}.isosch" out="${outputname}.xsl">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
   </target>

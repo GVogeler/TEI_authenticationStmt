@@ -130,12 +130,12 @@
     </xslt>
     <echo>step 8: p5.isosch → p5.isosch.xsl</echo>
     <xslt processor="trax" force="yes" in="p5.isosch" out="p5.isosch.xsl"
-          style="Utilities/lib/schxslt-1.9.5/2.0/pipeline-for-svrl.xsl">
+          style="Utilities/lib/schxslt-1.10.1/2.0/pipeline-for-svrl.xsl">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
     <echo>step 9a: p5.isosch → p5examples.isosch.xsl</echo>
     <xslt processor="trax" force="yes" in="p5.isosch" out="p5examples.isosch.xsl"
-          style="Utilities/lib/schxslt-1.9.5/2.0/pipeline-for-svrl.xsl">
+          style="Utilities/lib/schxslt-1.10.1/2.0/pipeline-for-svrl.xsl">
       <factory name="net.sf.saxon.TransformerFactoryImpl"/>
     </xslt>
     <echo>step 9b: change TEI NS to Examples NS in p5examples.isosch.xsl</echo>
@@ -159,9 +159,9 @@
       <xslt processor="trax" force="yes" style="${XSL}/odds/extract-isosch.xsl" in="p5odds.compiled.xml" out="p5odds.isosch">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
-      <echo>... step 10d: p5odds.isosch → p5odds.isosch.xsl using Utilities/lib/schxslt-1.9.5/2.0/pipeline-for-svrl.xsl</echo>
+      <echo>... step 10d: p5odds.isosch → p5odds.isosch.xsl using Utilities/lib/schxslt-1.10.1/2.0/pipeline-for-svrl.xsl</echo>
       <xslt force="yes" in="p5odds.isosch" out="p5odds.isosch.xsl"
-            style="Utilities/lib/schxslt-1.9.5/2.0/pipeline-for-svrl.xsl">
+            style="Utilities/lib/schxslt-1.10.1/2.0/pipeline-for-svrl.xsl">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
       </xslt>
     </sequential>

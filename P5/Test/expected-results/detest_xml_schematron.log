@@ -2,16 +2,14 @@ at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[2]/tei:div[2]/tei:head[1] —
    The @generatedBy attribute is for use within a <post> element.
 at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[2]/tei:div[2]/tei:div[1]/tei:p[1]/tei:s[1] —
    The @generatedBy attribute is for use within a <post> element.
+at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[2]/tei:div[3]/tei:p[1]/tei:delSpan[3] —
+   The element indicated by @spanTo (#ds2) must follow the current delSpan element
+at /tei:TEI[1]/tei:teiHeader[1]/tei:encodingDesc[1]/tei:styleDefDecl[1] —
+   @schemeVersion can only be used if @scheme is specified.
 at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[9]/tei:p[1]/tei:abbr[1] —
    The abbr element should not be categorized in detail with @subtype unless also categorized in general with @type
 at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[11]/tei:div[3] —
    The div element should not be categorized in detail with @subtype unless also categorized in general with @type
-at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[2]/tei:div[3]/tei:p[1]/tei:delSpan[3] —
-   The element indicated by @spanTo (#ds2) must follow the current element delSpan
-at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[2]/tei:div[3]/tei:p[1]/tei:delSpan[4] —
-   The element indicated by @spanTo (notMeaningful) must follow the current element delSpan
-at /tei:TEI[1]/tei:teiHeader[1]/tei:encodingDesc[1]/tei:styleDefDecl[1] —
-   @schemeVersion can only be used if @scheme is specified.
 at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[2]/tei:div[1]/tei:p[2]/tei:date[1] —
    @calendar indicates one or more systems or calendars to which the date represented by the content of this element belongs, but this date element has no textual content.
 at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[16]/tei:list[3] —
@@ -82,3 +80,5 @@ at /tei:TEI[1]/tei:text[1]/tei:back[1]/tei:schemaSpec[1]/tei:elementSpec[1]/tei:
    In the context of tagset documentation, each ptr or ref element inside a listRef must have a target attribute with only 1 pointer as its value.
 at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[13]/tei:u[1]/tei:shift[2] —
    The @new attribute should always be supplied; use the special value "normal" to indicate that the feature concerned ceases to be remarkable at this point.
+at /tei:TEI[1]/tei:text[1]/tei:body[1]/tei:div[17]/tei:lg[1]/tei:l[5]/tei:quote[1]/tei:p[1] —
+   Abstract model violation: Metrical lines may not contain higher-level structural elements such as div, p, or ab, unless p is a child of figure or note, or is a descendant of floatingText.

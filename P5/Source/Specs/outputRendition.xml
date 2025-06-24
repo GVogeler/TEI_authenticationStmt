@@ -68,7 +68,6 @@
   <listRef>
     <ptr target="#TDPMPM"/>
     <ptr target="#TDPMOR"/>
-    <ptr target="#TDPMMC"/>
   </listRef>
   
 </elementSpec>

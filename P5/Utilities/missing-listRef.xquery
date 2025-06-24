@@ -5,6 +5,7 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare option output:method "html";
 declare option output:indent "yes";
 declare option output:omit-xml-declaration "yes";
+(: 2025-06-24: Made by ebb to assist with TEI Guidelines ticket #2652: https://github.com/TEIC/TEI/issues/2652 :)
 <html>
     <head>
         <title>Task Completion Table for Specs Lacking listRef Elements</title>

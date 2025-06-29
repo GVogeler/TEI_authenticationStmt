@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Add event listeners to show popup notes when each link is clicked.
   links.forEach(link => { link.addEventListener('click', showPopupFootnote) });
   
-  //addBiblFrame();
 });
 
 async function getBiblSource(){

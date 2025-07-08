@@ -50,8 +50,9 @@
 	  still living their personal lives in zest and endless
 	  novelty of action, … I saw myself still
 	  preserving, though with increasing difficulty, my lucid
-	  con<pc force="inter">-</pc><pb n="291" break="no" edRef="#stapledon1937"/>sciousness;</p>
+	  con<pb n="291" break="no" edRef="#stapledon1937"/>sciousness;</p>
     </egXML>
+    <p>In the above example, the soft hyphen in Stapledon 1937 is omitted. Such decisions may be documented in the edition's declaration of editorial principles, e.g. with the <gi>hyphenation</gi> element in the <gi>teiHeader</gi>.</p>
   </exemplum>
   <remarks versionDate="2025-07-08" xml:lang="en">
     <p>These guidelines provide no semantic basis or suggested

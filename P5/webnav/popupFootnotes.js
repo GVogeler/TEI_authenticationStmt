@@ -153,7 +153,6 @@ function showPopupBibl(el, biblId){
 //We have to be cautious here; some browsers block access to the iframe 
 //document contents from another document, especially when running locally.
   try{
-    console.log(biblId);
     bibl = divBiblWithShadow.shadowRoot.getElementById(biblId);
   }
   catch(e){

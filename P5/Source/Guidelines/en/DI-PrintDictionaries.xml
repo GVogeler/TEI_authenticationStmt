@@ -180,30 +180,30 @@ place where <q>three-D</q> would appear). </p>
 
 <p>A dictionary with no internal divisions might thus have a structure
 like the following; an outer <gi>entry</gi> element with a
-<att>type</att> attribute value of <val>wordFamily</val> is shown
+<att>type</att> attribute value of <val>homograph</val> is shown
 grouping two homograph entries.
 <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="DIBO-egXML-fg" xml:lang="und">
   <body>
     <entry>
       <form>
-	<orth>manifestation</orth> <!-- demonstration -->
+        <orth>manifestation</orth> <!-- demonstration -->
       </form>
     </entry>
     <entry>
       <form>
-	<orth>émeute</orth> <!-- riot -->
+        <orth>émeute</orth> <!-- riot -->
       </form>
     </entry>
-    <entry type="wordFamily">
-      <entry type="hom" n="1">
-	<form>
-	  <orth>grève</orth> <!-- strike -->
-	</form>
+    <entry type="homograph">
+      <entry n="1">
+        <form>
+          <orth>grève</orth> <!-- strike -->
+        </form>
       </entry>
-      <entry type="hom" n="2">
-	<form>
-	  <orth>grève</orth> <!-- shore -->
-	</form>
+      <entry n="2">
+        <form>
+          <orth>grève</orth> <!-- shore -->
+        </form>
       </entry>
     </entry>
   </body>
@@ -325,8 +325,8 @@ treated as entries, optionally grouped in an outer <gi>entry</gi> element:
     </entry>
     <entry n="2" type="hom">
       <sense n="1">
-	<sense n="a"> <!-- ... --> </sense>
-	<sense n="b"> <!-- ... --> </sense>
+        <sense n="a"> <!-- ... --> </sense>
+        <sense n="b"> <!-- ... --> </sense>
       </sense>
       <sense n="2"> <!-- ... --> </sense>
       <sense n="3"> <!-- ... --> </sense>

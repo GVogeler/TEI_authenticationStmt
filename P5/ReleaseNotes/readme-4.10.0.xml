@@ -31,8 +31,8 @@
         of the issues resolved in the course of this release cycle may be found under the <ref
           target="https://github.com/TEIC/TEI/milestone/20?closed=1">4.10.0 milestone</ref>. Many thanks to the community
         contributors who reported issues, sent bug fixes, and helped with the drafting that led
-        to this release, including: Piotr Bański, Gerrit Brüning, Lou Burnard, Hugh Cayless, Ash Clark,
-        David Maus, Matija Ogrin, Klaus Rettinghaus,
+        to this release, including: Piotr Bański, Lou Burnard, Hugh Cayless, Ash Clark,
+        David Maus, Natsuko Nakagawa, Matija Ogrin, Klaus Rettinghaus,
         . </p>
       <p/>
       <p>The following changes are particularly worth highlighting in this release: 
@@ -97,7 +97,14 @@
             time since the launch of P5 in 2007, and the acknowledgments now list TEI Board members who have served over the past two decades 
             (<ref target="https://github.com/TEIC/TEI/issues/2741">#2741</ref>, <ref target="https://github.com/TEIC/TEI/issues/2284">#2284</ref>, 
             <ref target="https://github.com/TEIC/TEI/issues/2688">#2688</ref> and <ref target="https://github.com/TEIC/TEI/pull/2743">PR #2743</ref>).</item>
-          <item>This release adds explanation and updates an example to help clarify the difference between
+          <item>This release provides a revision and a new example of dictionary encoding adapted from the TEI Lex-0 specification 
+            (<ref target="https://github.com/TEIC/TEI/issues/2718">#2718</ref> and <ref target="https://github.com/TEIC/TEI/pull/2746">PR #2746</ref>).</item>
+          <item>An example in Core Tags for Drama has been revised to replace <gi>p</gi> with <gi>ab</gi> as 
+            better suited to encoding that does not assert a passage is either prose or verse 
+            (<ref target="https://github.com/TEIC/TEI/issues/2719">#2719</ref> and 
+            <ref target="https://github.com/TEIC/TEI/pull/2731">PR #2731</ref>).</item>
+          <item>XPath examples were corrected in Chapter 3 (<ref target="https://github.com/TEIC/TEI/issues/2690">#2690</ref>).</item>
+          <item>This release revises an existing dictionary example to help clarify the difference between
             <att>ed</att> and <att>edRef</att> 
             (<ref target="https://github.com/TEIC/TEI/issues/2653">#2653</ref> and 
             <ref target="https://github.com/TEIC/TEI/pull/2730">PR #2730</ref>).</item>
@@ -105,10 +112,6 @@
             <name type="datatype">teidata.name</name> and its description had been revised 
             (<ref target="https://github.com/TEIC/TEI/issues/2681">#2681</ref> 
             and <ref target="https://github.com/TEIC/TEI/pull/2682">PR #2682</ref>).</item>
-          <item>An example in Core Tags for Drama has been revised to replace <gi>p</gi> with <gi>ab</gi> as 
-            better suited to encoding that does not assert a passage is either prose or verse 
-            (<ref target="https://github.com/TEIC/TEI/issues/2719">#2719</ref> and 
-            <ref target="https://github.com/TEIC/TEI/pull/2731">PR #2731</ref>).</item>
           <item>Many element specifications thave been revised to include lists reference locations indicating
             where they are mentioned in the Guidelines (<ref target="https://github.com/TEIC/TEI/issues/2652">#2652</ref>
             and <ref target="https://github.com/TEIC/TEI/pull/2722">PR #2722</ref>).</item>
@@ -132,7 +135,6 @@
           <item>Broken links have been repaired  (<ref target="https://github.com/TEIC/TEI/pull/2673">PR #2673</ref> and 
             <ref target="https://github.com/TEIC/TEI/pull/2679">PR #2679</ref>).</item>
           <item>Improvements in the JavaScript handling of pop-up notes (<ref target="https://github.com/TEIC/TEI/pull/2692">PR #2692</ref>).</item>
-    
         </list>
       </p>
      <!-- STYLESHEETS-->

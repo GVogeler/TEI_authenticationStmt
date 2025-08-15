@@ -31,8 +31,8 @@
         of the issues resolved in the course of this release cycle may be found under the <ref
           target="https://github.com/TEIC/TEI/milestone/20?closed=1">4.10.0 milestone</ref>. Many thanks to the community
         contributors who reported issues, sent bug fixes, and helped with the drafting that led
-        to this release, including: Piotr Bański, Lou Burnard, Hugh Cayless, Ash Clark,
-        David Maus, Natsuko Nakagawa, Matija Ogrin, Klaus Rettinghaus,
+        to this release, including: GitHub user a1ix2, John Bampton, Piotr Bański, Lou Burnard, Hugh Cayless, Ash Clark, Tomaz Erjavec,
+        David Maus, Natsuko Nakagawa, Matija Ogrin, Klaus Rettinghaus, and GitHub user rvdb.
         . </p>
       <p/>
       <p>The following changes are particularly worth highlighting in this release: 
@@ -129,12 +129,14 @@
         </list> 
         <list>
           <head>Housekeeping</head>
-         <item>The encoding of <gi>list</gi> elements in the Guidelines has been revised to consistently 
-           apply the <att>rend</att> attribute for ordered lists (<ref target="https://github.com/TEIC/TEI/issues/2683">#2683</ref> and 
+         <item>The encoding of <gi>list</gi> elements in the Guidelines has been revised to  
+           apply the <att>rend</att> attribute consistently for ordered lists 
+           (<ref target="https://github.com/TEIC/TEI/issues/2683">#2683</ref> and 
            <ref target="https://github.com/TEIC/TEI/pull/2693">PR #2693</ref>).</item>
           <item>Broken links have been repaired  (<ref target="https://github.com/TEIC/TEI/pull/2673">PR #2673</ref> and 
             <ref target="https://github.com/TEIC/TEI/pull/2679">PR #2679</ref>).</item>
-          <item>Improvements in the JavaScript handling of pop-up notes (<ref target="https://github.com/TEIC/TEI/pull/2692">PR #2692</ref>).</item>
+          <item>Improvements in the JavaScript handling of pop-up notes 
+            (<ref target="https://github.com/TEIC/TEI/pull/2692">PR #2692</ref>).</item>
         </list>
       </p>
      <!-- STYLESHEETS-->
@@ -148,7 +150,28 @@
           milestone</ref>.</p>
 
       <p>Highlights of this release follow.<list>
-        <item></item>
+          <item>Repairs to teitohtml.xsl to ensure the <att>type</att> of <gi>ab</gi> 
+            is output as the value of an HTML <att>class</att> 
+            (Stylesheets <ref target="https://github.com/TEIC/Stylesheets/issues/723">723</ref> and
+            <ref target="https://github.com/TEIC/Stylesheets/pull/724">PR #724</ref>).</item>
+          <item>The transformtei bin file can now process filenames with spaces (Stylesheets 
+            <ref target="https://github.com/TEIC/Stylesheets/pull/738">PR #738</ref>).</item>
+          <item>Improved processing of Schematron in ODD processing 
+            (Stylesheets <ref target="https://github.com/TEIC/Stylesheets/pull/731">PR #731</ref>,
+            <ref target="https://github.com/TEIC/Stylesheets/issues/749">#749</ref>, 
+            <ref target="https://github.com/TEIC/Stylesheets/issues/750">#750</ref>,
+            <ref target="https://github.com/TEIC/Stylesheets/pull/751">PR #751</ref>, and
+            <ref target="https://github.com/TEIC/Stylesheets/pull/762">PR #762</ref>). </item>
+          <item>Repairs of broken links pointing to information about deprecation warnings 
+            (Stylesheets <ref target="https://github.com/TEIC/Stylesheets/issues/694">#694</ref> and
+            <ref target="https://github.com/TEIC/Stylesheets/pull/747">PR #747</ref>).</item>
+          <item>Improvements in the Stylesheets test suite (Stylesheets 
+            <ref target="https://github.com/TEIC/Stylesheets/issues/728">#728</ref>,
+            <ref target="https://github.com/TEIC/Stylesheets/issues/755">#755</ref> and 
+            <ref target="https://github.com/TEIC/Stylesheets/pull/756">PR #756</ref>).</item>
+          <item>Emendations of broken links in the Stylesheets README (Stylesheets 
+            <ref target="https://github.com/TEIC/Stylesheets/issues/703">#703</ref> and 
+            <ref target="https://github.com/TEIC/Stylesheets/pull/710">PR #710</ref>)</item>
         </list>
       </p>
     </body>

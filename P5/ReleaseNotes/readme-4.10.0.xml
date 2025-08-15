@@ -31,22 +31,43 @@
         of the issues resolved in the course of this release cycle may be found under the <ref
           target="https://github.com/TEIC/TEI/milestone/20?closed=1">4.10.0 milestone</ref>. Many thanks to the community
         contributors who reported issues, sent bug fixes, and helped with the drafting that led
-        to this release, including: <!-- collect the names! -->. </p>
+        to this release, including: Piotr Bański, Gerrit Brüning, Lou Burnard, Hugh Cayless, Ash Clark,
+        David Maus, Matija Ogrin, Klaus Rettinghaus,
+        . </p>
       <p/>
       <p>The following changes are particularly worth highlighting in this release: 
         <list>
           <head>New encoding features</head>
-         <item></item>
+          
             
         </list>
         <list>
           <head>Changes to content models</head>
-          <item></item>
+          <item>The <gi>facsimile</gi> element is now permitted to self-nest 
+            to represent relationships among collections of manuscripts.
+            (<ref target="https://github.com/TEIC/TEI/issues/2565">#2565</ref> and 
+            <ref target="https://github.com/TEIC/TEI/pull/2654">PR #2654</ref>).</item>
+          <item>The content models of <gi>place</gi>, <gi>event</gi>, <gi>person</gi>, and <gi>org</gi> 
+            now include <gi>ref</gi> in addition to <gi>ptr</gi> element children 
+            (<ref target="https://github.com/TEIC/TEI/issues/2651">#2651</ref> and 
+            <ref target="https://github.com/TEIC/TEI/pull/2689">PR #2689</ref>).
+          </item>
         </list>
         <list>
           <head>Changes to classes</head>
          <item></item>
       
+        </list>
+        <list>
+          <head>Changes to the build process for publishing the Guidelines</head>
+          <item>With this release, the Guidelines are no longer served in the outdated and proprietary Kindle .mobi format,
+            since they can be read in the EPUB format in the Kindle application
+            (<ref target="https://github.com/TEIC/TEI/issues/2574">#2574</ref> 
+            and <ref target="https://github.com/TEIC/TEI/pull/2600">PR #2600</ref>). </item>
+          <item>We have updated the Guidelines build process
+            to apply <ref target="https://codeberg.org/SchXslt/schxslt/src/branch/main">SchXslt</ref>, 
+            which implements Schematron validation with XSLT (<ref target="https://github.com/TEIC/TEI/pull/2509">PR #2509</ref>).
+          </item>
         </list>
       </p>
       <p>The following changes introduced with this release could invalidate ODD customizations in
@@ -54,25 +75,35 @@
         following changes, and may need to adapt their ODD files accordingly. 
         <list>
           <head>ODD-breaking changes and deprecation</head>
-         <item></item>
+          <item>Writers of Schematron in ODD customizations will find that Schematron assert and report tests must be
+            established within a rule with a <att>context</att> attribute. A missing context was previously deprecated with a warning, but
+            now generates an error (<ref target="https://github.com/TEIC/TEI/pull/2680">PR #2680</ref>).</item>
         </list>
       </p>
       <p>
         <list>
           <head>Improvements of prose and examples</head>
-          <item></item>
-          <item></item>
+          <item>This release adds explanation and updates an example to help clarify the difference between
+            <att>ed</att> and <att>edRef</att> 
+            (<ref target="https://github.com/TEIC/TEI/issues/2653">#2653</ref> and 
+            <ref target="https://github.com/TEIC/TEI/pull/2730">PR #2730</ref>).</item>
+          <item>German translations have been added to glosses and descriptions of global attributes
+            (<ref target="https://github.com/TEIC/TEI/pull/2674">PR #2674</ref>).
+          </item>
         </list>
-        <!-- 
+     
           <list>
           <head>Documentation</head>
-          <item/>
+          <item></item>
         </list> 
-        -->
         <list>
           <head>Housekeeping</head>
           <!-- For improvements in tidying, consistency...  -->
-         <item></item>
+         <item>The encoding of <gi>list</gi> elements in the Guidelines has been revised to consistently 
+           apply the <att>rend</att> attribute for ordered lists (<ref target="https://github.com/TEIC/TEI/issues/2683">#2683</ref> and 
+           <ref target="https://github.com/TEIC/TEI/pull/2693">PR #2693</ref>).</item>
+          <item>Broken links have been repaired  (<ref target="https://github.com/TEIC/TEI/pull/2673">PR #2673</ref> and 
+            <ref target="https://github.com/TEIC/TEI/pull/2679">PR #2679</ref>).</item>
         </list>
       </p>
      <!-- STYLESHEETS-->

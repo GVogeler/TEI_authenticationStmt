@@ -172,6 +172,10 @@
           <item>Emendations of broken links in the Stylesheets README (Stylesheets 
             <ref target="https://github.com/TEIC/Stylesheets/issues/703">#703</ref> and 
             <ref target="https://github.com/TEIC/Stylesheets/pull/710">PR #710</ref>)</item>
+          <item>Modification of odd.css to modify the styling of new attribute lists in HTML ODD documentation
+            (Stylesheets <ref target="https://github.com/TEIC/Stylesheets/issues/657">#657</ref> and
+            <ref target="https://github.com/TEIC/Stylesheets/pull/682">PR #682</ref>).
+          </item>
         </list>
       </p>
     </body>

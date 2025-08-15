@@ -125,7 +125,9 @@
      
           <list>
           <head>Documentation</head>
-          <item></item>
+            <item>Improvements to TEI Council Working Papers (TCW) 22 and 31 (Documentation 
+              <ref target="https://github.com/TEIC/Documentation/pull/18">PR #18</ref> and
+              <ref target="https://github.com/TEIC/Documentation/pull/19">PR #19</ref>).</item>
         </list> 
         <list>
           <head>Housekeeping</head>

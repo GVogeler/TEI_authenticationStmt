@@ -32,7 +32,7 @@
           target="https://github.com/TEIC/TEI/milestone/20?closed=1">4.10.0 milestone</ref>. Many
         thanks to the community contributors who reported issues, sent bug fixes, and helped with
         the drafting that led to this release, including: GitHub user a1ix2, John Bampton, Piotr
-        Bański, Lou Burnard, Hugh Cayless, Ash Clark, Tomaz Erjavec, David Maus, Natsuko Nakagawa,
+        Bański, Lou Burnard, Hugh Cayless, Ash Clark, Tomaž Erjavec, David Maus, Natsuko Nakagawa,
         Matija Ogrin, Klaus Rettinghaus, and GitHub user rvdb.</p>
       <p>The following changes are particularly worth highlighting in this release: 
         <!--<list>
@@ -86,11 +86,12 @@
       <p>
         <list>
           <head>Improvements of prose and examples</head>
-          <item>The dedication, introductory note, and acknowledgments have been significantly revised with this release. 
-            The dedication now includes
-            our founding editor of the TEI consortium and Guidelines, C. Michael SperBerg-McQueen (1954-2024), and
-            provides  <q>about</q> links for each person listed. The introductory note is now updated for the first
-            time since the launch of P5 in 2007, and the acknowledgments now list TEI Board members who have served over the past two decades 
+          <item>The <ref target="https://tei-c.org/Vault/P5/4.10.0/doc/tei-p5-doc/en/html/dedication.html">Dedication</ref> and the
+            <ref target="https://tei-c.org/Vault/P5/4.10.0/doc/tei-p5-doc/en/html/FM1.html">Preface and Acknowledgments</ref> 
+            have been significantly revised with this release. The dedication now includes
+            our founding editor of the TEI consortium and Guidelines, C. Michael Sperberg-McQueen (1954-2024), and
+            provides  <q>about</q> links for each person listed. The Preface and Acknowledgments are now updated for the first
+            time since the launch of P5 in 2007, and they now list TEI Board members who have served over the past two decades 
             (<ref target="https://github.com/TEIC/TEI/issues/2741">#2741</ref>, <ref target="https://github.com/TEIC/TEI/issues/2284">#2284</ref>, 
             <ref target="https://github.com/TEIC/TEI/issues/2688">#2688</ref>, and <ref target="https://github.com/TEIC/TEI/pull/2743">PR #2743</ref>).</item>
           <item>This release provides a revision and a new example of dictionary encoding adapted from the TEI Lex-0 specification 
@@ -108,7 +109,7 @@
             <name type="datatype">teidata.name</name> and its description had been revised 
             (<ref target="https://github.com/TEIC/TEI/issues/2681">#2681</ref> 
             and <ref target="https://github.com/TEIC/TEI/pull/2682">PR #2682</ref>).</item>
-          <item>Many element specifications have been revised to include lists reference locations indicating
+          <item>Many element specifications have been revised to list reference locations indicating
             where they are mentioned in the Guidelines (<ref target="https://github.com/TEIC/TEI/issues/2652">#2652</ref>
             and <ref target="https://github.com/TEIC/TEI/pull/2722">PR #2722</ref>).</item>
           <item>German translations have been added to glosses and descriptions of global attributes

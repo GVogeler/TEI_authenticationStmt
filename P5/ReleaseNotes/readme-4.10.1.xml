@@ -23,11 +23,12 @@
   </teiHeader>
   <text>
     <body>
-      <p>Release 4.10.1 removes the (Schematron) constraint that
-      warned when two or more sibling declarable elements appeared in
-      the TEI header without the required attributes. For now this
-      constraint is still present in <ref
-      target="https://www.tei-c.org/Vault/P5/4.10.1/doc/tei-p5-doc/en/html/CC.html#CCAS2">the
+      <p>Release 4.10.1 is a patch release to remove a Schematron constraint introduced in the 4.10.0 release.
+        This constraint flagged as an error the case of two or more sibling declarable elements appearing in
+        the TEI header without the required attributes. Because TEI projects use these elements in the TEI Header 
+        in contexts that do not involve <name type="class">att.declarable</name>, we are removing the Schematron rule 
+        introduced in 4.10.0. For now the language guiding the constraint is still 
+      present in <ref target="https://www.tei-c.org/Vault/P5/4.10.1/doc/tei-p5-doc/en/html/CC.html#CCAS2">the
       prose</ref>, as it has been since P2. (<ref
       target="https://github.com/TEIC/TEI/issues/2750">#2750</ref> and
       <ref target="https://github.com/TEIC/TEI/pull/2751">PR #

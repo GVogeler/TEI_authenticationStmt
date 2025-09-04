@@ -26,7 +26,7 @@
       <p>Release 4.10.1 is a patch release to remove a Schematron
       constraint introduced in the <ref
       target="https://www.tei-c.org/Vault/P5/4.10.0/doc/tei-p5-doc/readme-4.10.0.html">4.10.0</ref>
-      release.  This constraint flagged as an error the case of two or
+      release. This constraint flagged as an error the case of two or
       more sibling declarable elements appearing in the TEI header
       without the required attributes. Because TEI projects use these
       elements in the TEI Header in contexts that do not involve <name

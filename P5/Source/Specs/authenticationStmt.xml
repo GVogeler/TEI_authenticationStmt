@@ -28,7 +28,7 @@
           <authDesc>
             <sealDesc><p>Validated by the seal of the Emperor</p></sealDesc>
           </authDesc>
-          <legalActor><persName ref="https://d-nb.info/gnd/118819097">The Emperor Qing Xuantongì</persName></legalActor>
+          <legalActor><persName ref="https://d-nb.info/gnd/118819097">The <roleName>Emperor</roleName> Qing Xuantongì</persName></legalActor>
           <issued when="1912-02-12">宣统三年正月二十五日</issued>
         </authenticationStmt>
       </fileDesc>

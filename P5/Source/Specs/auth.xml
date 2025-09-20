@@ -26,7 +26,6 @@
   <remarks xml:lang="en" versionDate="2025-09-13"><p>Several elements in the TEI can have the function of a means of authentication, like a <gi>seal</gi>, a signature (<gi>signed</gi>) or a <gi>stamp</gi>. The <gi>authen</gi> element is considered an generalisation of these elements for authentication practices not covered with dedicated elements.</p>
     <p>It is recommended to specify this in the <att>type</att> attribute referencing a controlled vocabulary such as the <title ref="https://www.cei.lmu.de/VID">Vocabulaire Internationale de la Diplomatique</title>.</p></remarks>
   <listRef>
-    <ptr target="#HD1"/>
-    <ptr target="#MS"/>
+    <ptr target="#HD25"/>
   </listRef>
 </elementSpec>

@@ -35,7 +35,6 @@
     </egXML>
   </exemplum>
   <listRef>
-    <ptr target="#HD1"/>
-    <ptr target="#MS"/>
+    <ptr target="#HD25"/>
   </listRef>
 </elementSpec>

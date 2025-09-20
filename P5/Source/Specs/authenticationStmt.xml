@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CC-BY licensed -->
+<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="core" xml:id="gi-authenticationStmt" ident="authenticationStmt">
+  <gloss versionDate="2025-09-17" xml:lang="en">statement of authentication</gloss>
+  <desc versionDate="2011-11-16" xml:lang="en">describes the features of the text that makes it a document 
+    creating social reality through a formalized act of inscription.</desc>
+  <classes>
+    <memberOf key="att.global"/>
+    <memberOf key="att.canonical"/>
+  </classes>
+  <content>
+    <sequence maxOccurs="1" minOccurs="1">
+      <elementRef key="authDesc"/>
+      <elementRef key="legalActor"/>
+      <elementRef key="issued"/>
+    </sequence>
+  </content>
+  <exemplum xml:lang="en" >
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authenticationStmt-egXML-vp"  xml:lang="en" source="#XXXX">
+      <fileDesc>
+        <titleStmt>
+          <title>A strong document</title>
+        </titleStmt>
+        <publicationStmt>
+          <p>Distributed as part of TEI P5</p>
+        </publicationStmt>
+        <authenticationStmt>
+          <authDesc>
+            <sealDesc><p>Validated by the seal of the Emperor</p></sealDesc>
+          </authDesc>
+          <legalActor><persName ref="https://d-nb.info/gnd/118819097">The Emperor Qing Xuantongì</persName></legalActor>
+          <issued when="1912-02-12">宣统三年正月二十五日</issued>
+        </authenticationStmt>
+      </fileDesc>
+    </egXML>
+  </exemplum>
+  <!--<content>
+    <sequence>
+      <alternate>
+        <sequence>
+          
+          <elementRef key="resp" minOccurs="1" maxOccurs="unbounded"/>
+          
+          
+          <classRef key="model.nameLike.agent" minOccurs="1" maxOccurs="unbounded"/>
+          
+        </sequence>
+        <sequence>
+          
+          <classRef key="model.nameLike.agent" minOccurs="1" maxOccurs="unbounded"/>
+          
+          
+          <elementRef key="resp" minOccurs="1" maxOccurs="unbounded"/>
+          
+        </sequence>
+      </alternate>
+      <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>    
+  </content>-->
+  <listRef>
+    <ptr target="#COBICOR"/>
+    <ptr target="#HD21"/>
+    <ptr target="#HD22"/>
+    <ptr target="#HD26"/>
+  </listRef>
+</elementSpec>

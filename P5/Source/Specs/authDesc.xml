@@ -19,10 +19,10 @@
     <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authDesc-egXML-vp"  xml:lang="en" source="#XXXX" valid="false">
       <fileDesc>
         <titleStmt>
-          <title>A strong document</title>
+          <title>Edict of the Abdication by Puyi</title>
         </titleStmt>
         <publicationStmt>
-          <p>Distributed as part of TEI P5</p>
+          <p>...</p>
         </publicationStmt>
         <authenticationStmt xmlns="">
           <authDesc>

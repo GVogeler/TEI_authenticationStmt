@@ -38,6 +38,7 @@
         <classRef key="model.pLike" minOccurs="1" maxOccurs="unbounded"/>
         <alternate minOccurs="0" maxOccurs="unbounded">
           <elementRef key="msContents"/>
+          <elementRef key="authenticationStmt"/>
           <elementRef key="physDesc"/>
           <elementRef key="history"/>
           <elementRef key="additional"/>

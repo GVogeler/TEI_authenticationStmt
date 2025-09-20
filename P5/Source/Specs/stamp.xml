@@ -15,6 +15,7 @@
     <memberOf key="att.global"/>
     <memberOf key="att.datable"/>
     <memberOf key="att.typed"/>
+    <memberOf key="model.authDescPart"/>
     <memberOf key="model.pPart.msdesc"/>
   </classes>
   <content>

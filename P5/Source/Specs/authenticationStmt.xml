@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- CC-BY licensed -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
-<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="core" xml:id="gi-authenticationStmt" ident="authenticationStmt">
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="header" xml:id="gi-authenticationStmt" ident="authenticationStmt">
   <gloss versionDate="2025-09-17" xml:lang="en">statement of authentication</gloss>
-  <desc versionDate="2011-11-16" xml:lang="en">describes the features of the text that makes it a document 
-    creating social reality through a formalized act of inscription.</desc>
+  <desc versionDate="2011-11-16" xml:lang="en">describes the features of the text that makes it a document creating social reality through a formalized act of inscription.</desc>
   <classes>
     <memberOf key="att.global"/>
     <memberOf key="att.canonical"/>
@@ -17,7 +16,7 @@
     </sequence>
   </content>
   <exemplum xml:lang="en" >
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authenticationStmt-egXML-vp"  xml:lang="en" source="#XXXX">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authenticationStmt-egXML-vp"  xml:lang="en" source="#XXXX" valid="false">
       <fileDesc>
         <titleStmt>
           <title>A strong document</title>
@@ -25,7 +24,7 @@
         <publicationStmt>
           <p>Distributed as part of TEI P5</p>
         </publicationStmt>
-        <authenticationStmt>
+        <authenticationStmt xmlns="">
           <authDesc>
             <sealDesc><p>Validated by the seal of the Emperor</p></sealDesc>
           </authDesc>

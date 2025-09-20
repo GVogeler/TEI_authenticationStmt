@@ -23,6 +23,7 @@ dedicatory epistle, or other division of a text.</desc>
     <memberOf key="att.global"/>
     <memberOf key="att.cmc"/>
     <memberOf key="att.written"/>
+    <memberOf key="model.authDescPart"/>
     <memberOf key="model.divBottomPart"/>
     <memberOf key="model.divTopPart"/>
   </classes>

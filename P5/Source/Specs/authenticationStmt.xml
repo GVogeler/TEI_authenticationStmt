@@ -35,33 +35,8 @@
       </fileDesc>
     </egXML>
   </exemplum>
-  <!--<content>
-    <sequence>
-      <alternate>
-        <sequence>
-          
-          <elementRef key="resp" minOccurs="1" maxOccurs="unbounded"/>
-          
-          
-          <classRef key="model.nameLike.agent" minOccurs="1" maxOccurs="unbounded"/>
-          
-        </sequence>
-        <sequence>
-          
-          <classRef key="model.nameLike.agent" minOccurs="1" maxOccurs="unbounded"/>
-          
-          
-          <elementRef key="resp" minOccurs="1" maxOccurs="unbounded"/>
-          
-        </sequence>
-      </alternate>
-      <elementRef key="note" minOccurs="0" maxOccurs="unbounded"/>
-    </sequence>    
-  </content>-->
   <listRef>
-    <ptr target="#COBICOR"/>
-    <ptr target="#HD21"/>
-    <ptr target="#HD22"/>
-    <ptr target="#HD26"/>
+    <ptr target="#HD1"/>
+    <ptr target="#MS"/>
   </listRef>
 </elementSpec>

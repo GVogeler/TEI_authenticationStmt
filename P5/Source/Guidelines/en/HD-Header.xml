@@ -669,6 +669,71 @@ Note here the use of the <att>target</att> attribute to point to a location from
 <specGrp xml:id="D2224" n="The publication statement"><include xmlns="http://www.w3.org/2001/XInclude" href="../../Specs/publicationStmt.xml"/><include xmlns="http://www.w3.org/2001/XInclude" href="../../Specs/distributor.xml"/><include xmlns="http://www.w3.org/2001/XInclude" href="../../Specs/authority.xml"/><include xmlns="http://www.w3.org/2001/XInclude" href="../../Specs/idno.xml"/><include xmlns="http://www.w3.org/2001/XInclude" href="../../Specs/availability.xml"/><include xmlns="http://www.w3.org/2001/XInclude" href="../../Specs/licence.xml"/>
 </specGrp>
 </div>
+  
+
+  <div type="div3" xml:id="HD25">
+    <head>The Authentication Statement</head>
+    <p>Texts can create social reality. Humans have developed several methods to warrant that they gain trust. These methods for procedural and symoblic authentication include signatures, seals or stamps committing the person represented by this to claim made by the text. This chapter introduces the <specDesc key="authenticationStmt"/> to describe this. The user of this element can include simple prose or use three elements to be more explicit. Birth certificates, ionternational treaties, commercial contracts, land leases, royal diplomas, or imperial decress are concrete examples of this. They gain authority through the trust that text corresponds to the reality. Societies have developed mechanisms of validation that support this trust, reducing the risk of being dismissed as forgeries or drafts. These authentication methods can be recorded as a property of the text encoded according to these guidelines as part of the teiHeader or in a description of a single physical document (<gi>msDesc</gi>) with the element <specDesc key="authenticationStmt"/>.</p>
+    <p>The <gi>authenticationStmt</gi> describes material, procedural, symbolic or interpretative authenticity of a document. Any consideration about the relationship between the claim a text makes and reality can be discussed in simple prose.</p>
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="lat" valid="false" xml:id="HD25-egXML-ramble2028" source="#Ramble2018">
+      <authenticationStmt xmlns="">
+        <p>The expansion of the use of the thumbprints as signatures on legal
+          documents in Mustang is likely to be related to the development of the
+          practice in Nepalese legal usage. A spectacular example of a handprint
+          being used in an official administrative context is to be seen in plate 3,
+          a Nepalese government order, dated 1846 and bearing the handprint of
+          King Rajendra Vikram Shah.<note>Edition of the document: Rājendra Vikrama Śāha. 1846 (VS 1903). A pañjāpatra requesting Cautarīyā Bhīma Vikrama Śāha etc. to return to Kathmandu, herausg./übers. von Rajan Khatiwoda mit Simon Cubelic und Christof Zotter. Heidelberg: HAdW (Documenta Nepalica), 2017 : <ptr target="https://digi.hadw-bw.de/view/dna_0016_0086"/></note> In the sense that the print ‘empowers’ the
+          document with royal authority, the function is not too far removed from
+          the explicitly religious connotations of the endorsement of thangkas by
+          lamas mentioned above.</p>
+      </authenticationStmt>
+    </egXML>
+    <p>This chapter suggests further elements dedicated to the core information needed to describe the creation of social reality through the text: 
+      <list>
+        <item>the method of authentication itself (<specDesc key="authDesc"/>),</item> 
+        <item>the social actors committed to claim of the document (<specDesc key="legalActor"/>) and</item>
+        <item>The temporal and geographical allocation of the performative utterance of the text (<specDesc key="issued"/>).</item>
+      </list></p>
+    <div xml:id="HD251">
+      <head>Method of authentication itself (<specDesc key="authDesc"/>)</head>
+      <p>A generic <specDesc key="authen"/> elements covers all sorts of authentication methods that can be specified through the <att>type</att>-attribute. For some established methods exist elements used in other contexts: Impressions of a <specDesc key="seal"/> as material object embodying the authority of the issuer, or a <specDesc key="stamp"/> in ink or embossed mark serving as bureaucratic authentication can serve as symbolic record of authenticity. They express the commitment of the author of a document to its content in the same way as signatures (<specDesc key="signed"/>) or autographs do through handwriting. Using fingerprints or individualised symbolic drawings like in the medieval notarial culture add other methods that are linked to an individual.</p>
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="lat" source="#XXXX">
+        <!-- ToDo: eine besiegelte Notarsurkunde aus MOM? -->
+        <authDesc xmlns="">
+          <signed>###TODO###</signed>
+          <seal>###TODO###</seal>
+        </authDesc>
+      </egXML>
+      <p>Technical methods of marking authenticity can be a <specDesc key="watermark"/>, as a more or less hidden sign embedded in the writing material or a digital file. In the digital realm all sorts digital certificate exist as cryptographic equivalent of a seal or signature in the digital sphere. Algorithmic authentication, e.g. through a blockchain ledger are a technical infrastructure acting as validators in the digital domain. For this purpose, the description of the authentication can also include non-TEI description of authentication like <ref target="https://www.w3.org/TR/xmldsig-core">W3C recommendation how to use XML for digital signatures</ref>.</p>
+      <p>The <att>type</att> of the <gi>authen</gi> element should preferably reference controlled vocabularies, like the <title ref="https://www.cei.lmu.de/VID">Vocabulaire Internationale de la Diplomatique</title>.</p>
+      <p>The element includes the possibility to describe the method of authentication in prose in the reflection of the role of ritual performances creating the social object inscribed in a document. Handing over the document, public reading of a document, courtroom verdicts or oaths can be part of the authentication and need verbal description to record them.</p>
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="lat" source="#XXXX">
+        <authDesc xmlns=""><p>###TODO###</p></authDesc>
+      </egXML>
+    </div>
+    <div xml:id="HD252">
+      <head>Social actors committed to claim of the document (<specDesc key="legalActor"/>)</head>
+      <p>Several persons, groups, and institutions can issue the authority of the document. Grantors, donors, sovereigns, magistrate, or in general the <term>issuer</term>of a document are authors of the perforamtive text. They produces the document and claims authority behind it, give a privilege or property, or are the  political or legal authorities whose will the document embodies. Chanceries, i.e. specialized office in royal or ecclesiastical administrations responsible for drafting and issuing charters and diplomas, notaries as legally empowered scribe or official who writes and validates documents in civic and ecclesiastical contexts or the individual scribe physically writing the text, often trained in distinctive scripts signaling authenticity guarantee procedural authenticity.</p>
+      <p>Legal actors can be mediating: Witnesses attest to the truth and legality of the act. Counter-signer add a second signature to strengthen trust in the first. Seal bearer charged with affixing and safeguarding the seal, which authenticates the document, the bureaucrats keeping official registers, against which copies can be checked, custodians and archivist are responsible for preserving and controlling access to the document.</p>
+      <p>In more contemporary environments, specialised registrars of vital statistics certify births, deaths, or marriages. The insitutions of a notary public ensures the authenticity of signatures and transactions. Auditors check the correctness of documents within bureaucratic or financial systems. In digital environments Certification Authorities issue digital certificates that are used to signed documents.</p>
+      <p>On the side of recipients and users, beneficiaries and grantees are legal actors involved as they receive rights or recognition through the document. A petitioner requests a document or privilege and profits from them. Documents become social reality through an the formal audience named in the document that can be the general public, that, as a community can acknowledge the document’s authority (e.g., through ceremonial reading).</p>
+      <p>These roles can be assigned through the <att>type</att> attribute of the <gi>legalActor</gi> element and identified through the naming mechanisms provided by these guidelines. It is recommended to use shared vocabularies for these role, e.g. through the <title ref="https://www.cei.lmu.de/VID">Vocabulare Internationale de la Diplomatique</title>.</p>
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="lat" source="#MonTibetHistIII.8">
+        <legalActor type="https://www.cei.lmu.de/VID/#16" xmlns=""><persName xml:lang="Hant">元順<rolename>帝</rolename></persName>
+          <persName xml:lang="en"><roleName>Emperor</roleName> Toyon Temür</persName></legalActor>
+      </egXML>
+    </div>
+    <div xml:id="HD253">
+      <head>The temporal and geographical allocation of the performative utterance of the text (<specDesc key="issued"/>)</head>
+      <p>Time and place of the preformative act can describe jurisdiction and gives starting points to the claim of the text. </p>
+      <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="lat" source="#XXXX">
+        <issued xmlns="">
+          <placeName>###TODO###</placeName>
+          <date>###TODO###</date>
+        </issued>
+      </egXML>
+    </div>
+  </div>
 
 <div type="div3" xml:id="HD26"><head>The Series Statement</head>
 <p>The <gi>seriesStmt</gi> element is the fifth component of the

@@ -456,6 +456,7 @@
           <ref target="http://www.etudes-litteraires.com/figures-de-style/deictique.php">Études
             littéraires</ref>
         </title>, <date>consulté le 07-05-2010</date>. </bibl>
+      <bibl xml:id="MonTibetHistIII.8"><editor>Karl-Heinz Everding</editor> <title>Diplomata Mongolica. - Herrscherurkunden aus der Zeit des mong. Großreiches für tib. Adelshäuser, Geistliche &amp; Klöster. Mittelmongolische Urkunden in ‘Phags pa-Schrift. Edition, Übersetzung, Analyse.</title>. International Institute for Tibetan and Buddhist Studies, Halle <date>2006</date> (Monumenta Tibetica historica III,8).</bibl>
 
       <!--F-->
 
@@ -1132,6 +1133,7 @@
       <bibl xml:id="rab3" xml:lang="fr"><author>Rabelais, François</author>
         <title>Tiers livre des faictz et dictz Heroïques du noble Pantagruel...</title>
           (<date>1546</date>), adapted from the website at <ptr target="http://www.bvh.univ-tours.fr/Epistemon/"/></bibl>
+      <bibl xml:id="Ramble2018"><author>Ramble, Charles</author>: <title>Producing ‘South Asian’ Tibetan Documents in Highland Nepal, 19th to 20th Centuries: The Emergence and Disappearance of a Local Diplomatic Tradition</title>, in: Cubelic, Simon, Michaels, Axel and Zotter, Astrid (eds.): Studies in Historical Documents from Nepal and India, Heidelberg: Heidelberg University Publishing, <date>2018</date> (Documenta Nepalica: Book Series, Band 1), p. 111–133. DOI:10.17885/heiup.331.c4130</bibl>
       <bibl xml:id="fr-ex-Renard_Journal" xml:lang="fr"><author>Renard, Jules</author>,
           <title>Journal : 1887-1910</title>, <date>1910</date>.</bibl>
       <bibl xml:id="COBICOI-eg-264">Reference from the bibliography in <author>Reps, Thomas

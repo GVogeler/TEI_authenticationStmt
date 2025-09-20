@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CC-BY licensed -->
+<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
+<classSpec xmlns="http://www.tei-c.org/ns/1.0" module="header" xml:id="AUTHDESCPART" type="model" ident="model.authDescPart">
+   <desc versionDate="2025-09-14" xml:lang="en">Elements that can be used as means of authentication of a document.</desc>
+  <listRef>
+    <ptr target="#HD"/>
+  </listRef>
+</classSpec>

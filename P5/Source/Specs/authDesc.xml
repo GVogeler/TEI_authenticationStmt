@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CC-BY licensed -->
+<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="header" xml:id="gi-authenDesc" ident="authenDesc">
+  <gloss versionDate="2025-09-17" xml:lang="en">description of authentication method</gloss>
+  <desc versionDate="2025-09-13" xml:lang="en">The element escribes the method by which the document is validates / authenticated.</desc>
+  <classes>
+    <memberOf key="att.global"/>
+  </classes>
+  <content>
+    <alternate>
+      <classRef key="model.authDescPart"
+        minOccurs="0" maxOccurs="unbounded"/>
+      <classRef key="model.pLike" minOccurs="1"
+        maxOccurs="unbounded"/>
+    </alternate>
+  </content>
+  <exemplum xml:lang="en" >
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authDesc-egXML-vp"  xml:lang="en" source="#XXXX" valid="false">
+      <fileDesc>
+        <titleStmt>
+          <title>A strong document</title>
+        </titleStmt>
+        <publicationStmt>
+          <p>Distributed as part of TEI P5</p>
+        </publicationStmt>
+        <authenticationStmt xmlns="">
+          <authDesc>
+            <sealDesc><p>Validated by the seal of the Emperor</p></sealDesc>
+          </authDesc>
+          <legalActor><persName ref="https://d-nb.info/gnd/118819097">The Emperor Qing Xuantongì</persName></legalActor>
+          <issued when="1912-02-12">宣统三年正月二十五日</issued>
+        </authenticationStmt>
+      </fileDesc>
+    </egXML>
+  </exemplum>
+  <listRef>
+    <ptr target="#HD1"/>
+    <ptr target="#MS"/>
+  </listRef>
+</elementSpec>

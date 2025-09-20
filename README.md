@@ -1,6 +1,8 @@
 # Text Encoding Initiative - authentication extension 
 
-See also TEIC/TEI#2376 and a draft for an ODD in https://github.com/GVogeler/TEI_authenticationStmt_ODD
+This is a fork of TEIC/TEI proposing elements for the description of authentication methods. See also TEIC/TEI#2376 and a draft for an ODD in https://github.com/GVogeler/TEI_authenticationStmt_ODD and https://zenodo.org/records/17151402
+
+
 
 [![GitHub release](https://img.shields.io/github/release/TEIC/TEI.svg)](https://github.com/TEIC/TEI/releases)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3413524.svg)](https://doi.org/10.5281/zenodo.3413524)

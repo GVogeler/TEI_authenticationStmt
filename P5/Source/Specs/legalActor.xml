@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CC-BY licensed -->
+<?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="header" xml:id="gi-legalActor" ident="legalActor">
+  <gloss versionDate="2025-09-17" xml:lang="en">legal actor</gloss>
+  <desc versionDate="2025-09-13" xml:lang="en">Legal actors are those persons and institutions that are committed to the social reality created by a documnet. This can be notaries validating a text, legal parties of the act described in the text, witnesses to the legal act etc.</desc>
+  <classes>
+    <memberOf key="att.global"/>
+  </classes>
+  <content>
+    <alternate minOccurs="1" maxOccurs="unbounded">
+      <classRef key="model.pLike"/>
+      <classRef key="model.nameLike.agent"/>
+      <classRef key="model.publicationStmtPart.agency"/>
+      <textNode/>
+    </alternate>
+  </content>
+  <exemplum xml:lang="en" >
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:lang="lat" xml:id="gi-legalActor-egXML-tt" source="#MonTibetHistIII.8">
+      <authenticationStmt xmlns="">
+          <legalActor type="https://www.cei.lmu.de/VID/#16" xmlns=""><persName xml:lang="Hant">元順<rolename>帝</rolename></persName>
+            <persName xml:lang="en"><roleName>Emperor</roleName> Toyon Temür</persName></legalActor>
+      </authenticationStmt>
+    </egXML>
+  </exemplum>
+  <remarks xml:lang="en" versionDate="2025-09-17"><p>These roles can be assigned through the <att>type</att> attribute of the <gi>legalActor</gi> element and identified through the naming mechanisms provided by these guidelines. It is recommended to use shared vocabularies for these role, e.g. through the <title ref="https://www.cei.lmu.de/VID">Vocabulare Internationale de la Diplomatique</title>.</p></remarks>
+
+  <listRef>
+    <ptr target="#HD25"/>
+  </listRef>
+</elementSpec>

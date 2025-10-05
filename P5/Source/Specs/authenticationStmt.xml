@@ -16,7 +16,7 @@
     </sequence>
   </content>
   <exemplum xml:lang="en" >
-    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authenticationStmt-egXML-vp"  xml:lang="en" source="#XXXX" valid="false">
+    <egXML xmlns="http://www.tei-c.org/ns/Examples" xml:id="gi-authenticationStmt-egXML-vp"  xml:lang="en" valid="false">
       <fileDesc>
         <titleStmt>
           <title>A strong document</title>

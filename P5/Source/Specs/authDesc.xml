@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- CC-BY licensed -->
 <?xml-model href="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/xml/tei/odd/p5.nvdl" type="application/xml" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?>
-<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="header" xml:id="gi-authenDesc" ident="authenDesc">
+<elementSpec xmlns="http://www.tei-c.org/ns/1.0" module="header" xml:id="gi-authDesc" ident="authDesc">
   <gloss versionDate="2025-09-17" xml:lang="en">description of authentication method</gloss>
   <desc versionDate="2025-09-13" xml:lang="en">The element escribes the method by which the document is validates / authenticated.</desc>
   <classes>

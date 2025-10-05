@@ -39,6 +39,8 @@
         
           <elementRef key="notesStmt" minOccurs="0"/>
         
+          <elementRef key="authenticationStmt" minOccurs="0"/>
+        
       </sequence>
       
         <elementRef key="sourceDesc" minOccurs="1" maxOccurs="unbounded"/>

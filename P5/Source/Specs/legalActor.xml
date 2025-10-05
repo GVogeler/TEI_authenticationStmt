@@ -9,10 +9,11 @@
   </classes>
   <content>
     <alternate minOccurs="1" maxOccurs="unbounded">
+      <textNode/>
       <classRef key="model.pLike"/>
       <classRef key="model.nameLike.agent"/>
       <classRef key="model.publicationStmtPart.agency"/>
-      <textNode/>
+      <!--<textNode/>-->
     </alternate>
   </content>
   <exemplum xml:lang="en" >

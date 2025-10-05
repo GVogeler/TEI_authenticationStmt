@@ -39,6 +39,7 @@
         <alternate minOccurs="0" maxOccurs="unbounded">
           <elementRef key="msContents"/>
           <elementRef key="physDesc"/>
+          <elementRef key="authenticationStmt"/>
           <elementRef key="history"/>
           <elementRef key="additional"/>
           <elementRef key="msPart"/>
